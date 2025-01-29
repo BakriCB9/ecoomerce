@@ -15,7 +15,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
-    ServiceLocator.productCubit.getProduct('jewelery');
+    // ServiceLocator.productCubit.getProduct('jewelery');
     
     super.initState();
   }

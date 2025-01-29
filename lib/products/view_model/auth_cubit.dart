@@ -14,6 +14,7 @@ class ProductCubit extends Cubit<ProductState> {
       print('the anser now hhhhhhhhh');
       emit(ProductLoading());
       final ans = await productRepositry.getProduct(productName);
+      
       emit(ProductSuccess(ans));
     } catch (e) {
       emit(ProductError());
